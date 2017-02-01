@@ -1,0 +1,14 @@
+{
+  "name": "drupal/local_weather",
+  "type": "drupal-module",
+  "description": "Display the local weather on your website.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/local_weather",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/local_weather",
+    "source": "http://cgit.drupalcode.org/local_weather"
+  },
+  "require": { }
+}

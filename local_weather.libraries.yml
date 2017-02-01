@@ -1,0 +1,9 @@
+local_weather:
+  version: 2.x
+  css:
+    theme:
+      css/local_weather.css: {}
+  js:
+    js/local_weather.js: {}
+  dependencies
+    - core/jquery

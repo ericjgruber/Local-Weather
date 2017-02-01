@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains local_weather.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function local_weather_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the local_weather module.
+    case 'help.page.local_weather':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Display the local weather on your website.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function local_weather_theme() {
+  return [
+    'local_weather' => [
+      'template' => 'local_weather',
+      'render element' => 'children',
+    ],
+  ];
+}
